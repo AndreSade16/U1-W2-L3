@@ -244,12 +244,16 @@ console.log("charactersNames.length post operazione: ", charactersNames.length);
   Crea una funzionalità che selezioni un elemento casuale dall'array "starWarsCharacters" e ne stampi in console le proprietà in modo discorsivo (a tuo piacimento).
 */
 
-let randomIndex = Math.floor(Math.random() * starWarsCharacters.length);
+function generateCharacterTest() {
+  let randomIndex = Math.floor(Math.random() * starWarsCharacters.length);
 
-const randomCharacter = starWarsCharacters[randomIndex];
+  const randomCharacter = starWarsCharacters[randomIndex];
 
-console.log(`
+  return console.log(`
   Vi presento il personaggio di nome ${randomCharacter.name}, alto ${randomCharacter.height}cm e pesante ${randomCharacter.mass}kg.\n
   Sfoggia una pettinatura di color ${randomCharacter.hair_color}, un colorito ${randomCharacter.skin_color} e dei bellissimi occhi ${randomCharacter.eye_color}.\n
   E' nato nell'anno ${randomCharacter.birth_year} e il suo genere è ${randomCharacter.gender}!
   `);
+}
+
+generateCharacterTest();
