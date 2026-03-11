@@ -176,9 +176,11 @@ console.log("Blue Eye Color:", eyeColor.blue);
 */
 
 let crewMass = 0;
+let c = 0;
 
-for (let i = 0; i < starWarsCharacters.length; i++) {
-  crewMass = crewMass + starWarsCharacters[i].mass;
+while (c < starWarsCharacters.length) {
+  crewMass = crewMass + starWarsCharacters[c].mass;
+  c++;
 }
 
 console.log("CrewMass: ", crewMass);
